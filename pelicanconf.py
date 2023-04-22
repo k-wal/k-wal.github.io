@@ -33,4 +33,19 @@ DEFAULT_PAGINATION = 10
 # by me: adding output file for github
 OUTPUT_PATH = 'docs/'
 
-THEME = 'attila-1.6'
+# Path to the folder containing the plugins
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['pelican-ipynb.markup']
+MARKUP = ('md', 'ipynb')
+IPYNB_USE_METACELL = True
+
+IGNORE_FILES = [".ipynb_checkpoints"]
+
+#THEME = 'attila-1.6'
+
+# THEME = 'themes/pelican-alchemy/alchemy'
+# THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']
+
+THEME = 'Flex'
+PYGMENTS_STYLE = "default"
+THEME_COLOR = "light"
